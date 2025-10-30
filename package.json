@@ -47,14 +47,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thaitd96/react-native-ios-glur-view.git"
+    "url": "git+https://github.com/thaitd0396/react-native-ios-glur-view.git"
   },
   "author": "thaitd <thaitranbk59@gmail.com> (https://github.com/thaitd96)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thaitd96/react-native-ios-glur-view/issues"
+    "url": "https://github.com/thaitd0396/react-native-ios-glur-view/issues"
   },
-  "homepage": "https://github.com/thaitd96/react-native-ios-glur-view#readme",
+  "homepage": "https://github.com/thaitd0396/react-native-ios-glur-view#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
