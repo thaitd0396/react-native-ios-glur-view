@@ -149,7 +149,7 @@
     ]
   },
   "codegenConfig": {
-    "name": "IosGlurViewViewSpec",
+    "name": "IosGlurViewSpec",
     "type": "all",
     "jsSrcsDir": "src",
     "android": {
@@ -157,7 +157,7 @@
     },
     "ios": {
       "componentProvider": {
-        "IosGlurViewView": "IosGlurViewView"
+        "IosGlurView": "IosGlurView"
       }
     }
   },

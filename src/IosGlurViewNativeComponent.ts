@@ -35,4 +35,4 @@ export interface NativeProps extends ViewProps {
   imageUri?: WithDefault<string, ''>;
 }
 
-export default codegenNativeComponent<NativeProps>('IosGlurViewView');
+export default codegenNativeComponent<NativeProps>('IosGlurView');

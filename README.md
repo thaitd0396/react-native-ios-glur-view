@@ -4,23 +4,19 @@ glur view for react native
 
 ## Installation
 
-
 ```sh
 npm install react-native-ios-glur-view
 ```
 
-
 ## Usage
 
-
 ```js
-import { IosGlurViewView } from "react-native-ios-glur-view";
+import { IosGlurView } from 'react-native-ios-glur-view';
 
 // ...
 
-<IosGlurViewView color="tomato" />
+<IosGlurView color="tomato" />;
 ```
-
 
 ## Contributing
 

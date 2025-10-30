@@ -1,10 +1,10 @@
 import { StyleSheet, View } from 'react-native';
-import { IosGlurViewView } from 'react-native-ios-glur-view';
+import { IosGlurView } from 'react-native-ios-glur-view';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <IosGlurViewView
+      <IosGlurView
         useGlur
         glurRadius={25}
         glurOffset={0.3}

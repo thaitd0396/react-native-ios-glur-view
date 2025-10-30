@@ -1,9 +1,9 @@
-#import "IosGlurViewView.h"
+#import "IosGlurView.h"
 
-#import <react/renderer/components/IosGlurViewViewSpec/ComponentDescriptors.h>
-#import <react/renderer/components/IosGlurViewViewSpec/EventEmitters.h>
-#import <react/renderer/components/IosGlurViewViewSpec/Props.h>
-#import <react/renderer/components/IosGlurViewViewSpec/RCTComponentViewHelpers.h>
+#import <react/renderer/components/IosGlurViewSpec/ComponentDescriptors.h>
+#import <react/renderer/components/IosGlurViewSpec/EventEmitters.h>
+#import <react/renderer/components/IosGlurViewSpec/Props.h>
+#import <react/renderer/components/IosGlurViewSpec/RCTComponentViewHelpers.h>
 
 #import "RCTFabricComponentsPlugins.h"
 
@@ -11,24 +11,24 @@
 
 using namespace facebook::react;
 
-@interface IosGlurViewView () <RCTIosGlurViewViewViewProtocol>
+@interface IosGlurView () <RCTIosGlurViewViewProtocol>
 
 @end
 
-@implementation IosGlurViewView {
+@implementation IosGlurView {
     UIVisualEffectView * _blurView;
     UIView * _glurView; // created dynamically if GlurHostingView exists
 }
 
 + (ComponentDescriptorProvider)componentDescriptorProvider
 {
-    return concreteComponentDescriptorProvider<IosGlurViewViewComponentDescriptor>();
+    return concreteComponentDescriptorProvider<IosGlurViewComponentDescriptor>();
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
   if (self = [super initWithFrame:frame]) {
-    static const auto defaultProps = std::make_shared<const IosGlurViewViewProps>();
+    static const auto defaultProps = std::make_shared<const IosGlurViewProps>();
     _props = defaultProps;
 
     _blurView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleLight]];
@@ -43,8 +43,8 @@ using namespace facebook::react;
 
 - (void)updateProps:(Props::Shared const &)props oldProps:(Props::Shared const &)oldProps
 {
-    const auto &oldViewProps = *std::static_pointer_cast<IosGlurViewViewProps const>(_props);
-    const auto &newViewProps = *std::static_pointer_cast<IosGlurViewViewProps const>(props);
+    const auto &oldViewProps = *std::static_pointer_cast<IosGlurViewProps const>(_props);
+    const auto &newViewProps = *std::static_pointer_cast<IosGlurViewProps const>(props);
 
     // Switch between Glur and system blur when 'useGlur' toggles
     if (oldViewProps.useGlur != newViewProps.useGlur) {
@@ -98,9 +98,9 @@ using namespace facebook::react;
     [super updateProps:props oldProps:oldProps];
 }
 
-Class<RCTComponentViewProtocol> IosGlurViewViewCls(void)
+Class<RCTComponentViewProtocol> IosGlurViewCls(void)
 {
-    return IosGlurViewView.class;
+    return IosGlurView.class;
 }
 
 - (UIBlurEffectStyle)uiBlurEffectStyleFromString:(NSString *)style
@@ -195,3 +195,5 @@ Class<RCTComponentViewProtocol> IosGlurViewViewCls(void)
 }
 
 @end
+
+

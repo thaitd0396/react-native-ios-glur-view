@@ -6,10 +6,10 @@ import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.uimanager.ViewManager
 import java.util.ArrayList
 
-class IosGlurViewViewPackage : ReactPackage {
+class IosGlurViewPackage : ReactPackage {
   override fun createViewManagers(reactContext: ReactApplicationContext): List<ViewManager<*, *>> {
     val viewManagers: MutableList<ViewManager<*, *>> = ArrayList()
-    viewManagers.add(IosGlurViewViewManager())
+    viewManagers.add(IosGlurViewManager())
     return viewManagers
   }
 

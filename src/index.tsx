@@ -1,2 +1,2 @@
-export { default as IosGlurViewView } from './IosGlurViewViewNativeComponent';
-export * from './IosGlurViewViewNativeComponent';
+export * from './IosGlurViewNativeComponent';
+export { default as IosGlurView } from './IosGlurViewNativeComponent';
